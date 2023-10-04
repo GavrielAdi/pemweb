@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="center-container">
+        <div id="current-weather" class="weather">
+            <h2>Cuaca Kota Surabaya</h2>
+            <p>Waktu : <span id="current-time"></span></p>
+            <p>Suhu: <span id="current-temperature"></span>°C</p>
+            <p>Cuaca: <span id="current-weather-description"></span></p>
+            <p>Kecepatan Angin: <span id="current-wind-speed"></span> m/s</p>
+            <p>Arah Angin: <span id="current-wind-direction"></span>°</p>
+        </div>
+    </div>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+
+        .weather {
+            background-color: white;
+            padding: 16px;
+            width: fit-content;
+            margin: 0 auto;
+            border-radius: 0 8px 8px 0;
+            border-top: 0;
+            border-right: 0;
+            border-bottom: 0;
+            box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.12);
+        }
+
+        .weather p {
+            margin: 4px;
+            margin-left: 0;
+        }
+        .weather h2 {
+            margin: 8px;
+            margin-left: 0;
+        }
+    </style>
+</body>
+</html>
