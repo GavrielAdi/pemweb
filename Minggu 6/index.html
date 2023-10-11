@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        html, body {
+            height: 100%;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            flex: 1;
+        }
+        .full-height {
+            min-height: 100vh;
+        }
+        header, footer {
+            background-color: #f8f9fa;
+            padding: 10px 0;
+        }
+        .isi-footer{
+            padding: 10px 0 0 30px;
+        }
+    </style>
+    <title>Movie Database</title>
+    <script src="main.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">Movie Database</a>
+        </nav>
+    </header>
+    <h1 class="mt-5">Search Movies</h1>
+    <div class="input-group mb-3 mt-3">
+        <input type="text" id="title" class="form-control" placeholder="Enter movie title">
+        <div class="input-group-append">
+            <button class="btn btn-primary" onclick="MovieData()">SUBMIT</button>
+        </div>
+    </div>
+    <div id="fill" class="container">
+        <!-- Konten di sini -->
+    </div>
+    <footer>
+        <p class="isi-footer">&copy; 2023 Movie Database</p>
+    </footer>
+</body>
+</html>
